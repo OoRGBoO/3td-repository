@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Minessweeper Offline - Play 👨‍💻 Free Offline Minessweeper</title>
+    <link rel="stylesheet" href="style/css.css">
+</head>
+
+<body onkeyup="handleKey(event)" onload="initGame()">
+    <div class="levels">
+    </div>
+    <div class="board-container">
+        <table border="1" class="table">
+            <tbody class="board">
+                <div class="time">TIME</div>
+                <button class="smile" onclick="restartGame()">😃</button>
+                <div class="lives">🖤🖤🖤</div>
+                <button class="elBtn1" onclick="difficulty(4,4),restartGame(this)">Small</button>
+                <button class="elBtn2" onclick="difficulty(6,6),restartGame(this)">Medium</button>
+                <button class="elBtn3" onclick="difficulty(8,8),restartGame(this)">Large</button>
+            </tbody>
+        </table>
+    </div>
+    <script src="javascript/util.js"></script>
+    <script src="javascript/game.js"></script>
+</body>
+
+</html>
